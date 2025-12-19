@@ -5,7 +5,9 @@ import os
 from langchain_community.document_loaders import TextLoader
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 
+# --------------
 # I - LOAD FILES
+# --------------
 
 # Define the base directory path
 base_dir = TXT_FILE_PATH
@@ -28,17 +30,14 @@ for p in file_paths:
 # Print the number of loaded documents
 print(f"Number of loaded documents: {len(documents)}")
 
-# -----
-
+# -------------
 # II - CHUNKING
+# -------------
 
 # Initialize the text splitter
 text_splitter = RecursiveCharacterTextSplitter(
-    chunk_size=1000,  # Define the maximum size of each chunk
-    chunk_overlap=200 # Define the overlap between chunks to maintain context
+    chunk_size=1000,
+    chunk_overlap=200
 )
 
-# Split the loaded documents into chunks
 chunks = text_splitter.split_documents(documents)
-
-# Print the number of chunks created and the first chunk for verification

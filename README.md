@@ -1,7 +1,9 @@
 # insomnium-age_of_ainicorns
 
 ## Brief description of scripts (in sequence)
-1. `config.py`: Defines constants (API, paths...), function `get_vnpt_embedding()` and class `VNPTAIEmbedding`
+1. `config.py`: Defines 
+- Constants (API, paths...)
+- Function `get_vnpt_embedding()` and class `VNPTAIEmbedding`
 2. `data_loader.py`: Loads cleaned TXT/MD files and splits them into chunks
 files
 3. `retriever.py`: Defines function `get_relevant_contexts_hybrid()` to perform RAG using hybrid search (vector + keyword search)

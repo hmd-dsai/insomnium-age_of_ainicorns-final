@@ -1,7 +1,5 @@
-from config import (
-    JSON_TEST_PATH
-)
-from llm_call_config import small_llm_inference, large_llm_inference
+from config import JSON_TEST_PATH
+from llm_call_config import large_llm_inference, small_llm_inference
 import json
 
 with open(JSON_TEST_PATH, 'r') as f:

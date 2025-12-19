@@ -1,6 +1,6 @@
-# --------------------
+# ====================
 # I - DEFINE CONSTANTS
-# --------------------
+# ====================
 
 # API Keys
 EMBEDDING_API_URL = 'https://api.idg.vnpt.vn/data-service/vnptai-hackathon-embedding'
@@ -23,9 +23,9 @@ TXT_FILE_PATH = './raw_data'
 FAISS_INDEX_PATH = './faiss_index'
 JSON_TEST_PATH = './private_test.json'
 
-# -------------------------------
+# ===============================
 # II - DEFINE EMBEDDING UTILITIES
-# -------------------------------
+# ===============================
 
 import requests
 from typing import List
