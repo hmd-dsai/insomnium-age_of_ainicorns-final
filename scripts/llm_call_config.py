@@ -1,5 +1,14 @@
 import json
-from config import *
+from config import (
+    SMALL_LLM_API_URL,
+    SMALL_LLM_AUTH,
+    SMALL_LLM_TOKEN_ID,
+    SMALL_LLM_TOKEN_KEY,
+    LARGE_LLM_API_URL,
+    LARGE_LLM_AUTH,
+    LARGE_LLM_TOKEN_ID,
+    LARGE_LLM_TOKEN_KEY
+)
 from retriever import get_relevant_contexts_hybrid
 from typing import Dict
 import requests

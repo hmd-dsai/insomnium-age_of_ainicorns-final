@@ -1,4 +1,6 @@
-from config import *
+from config import (
+    JSON_TEST_PATH
+)
 from llm_call_config import small_llm_inference, large_llm_inference
 import json
 
@@ -16,13 +18,9 @@ for item in test_data:
 
 print(f"Extracted {len(questions_for_llm_test)} questions from test_data.")
 
-START = 0
-STOP = 1
-test_set = questions_for_llm_test[START:STOP]
-
 result = []
 
-for item in test_set:
+for item in questions_for_llm_test:
     if "$" in item['question']:
         result.append(large_llm_inference(item, rag=False))
     elif len(item['choices']) >= 5:

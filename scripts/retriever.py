@@ -1,4 +1,7 @@
-from config import *
+from config import (
+    FAISS_INDEX_PATH,
+    VNPTAIEmbedding
+)
 from data_loader import chunks
 from langchain_community.vectorstores import FAISS
 from langchain_community.retrievers import BM25Retriever
