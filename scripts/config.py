@@ -17,4 +17,4 @@ LARGE_LLM_TOKEN_ID = '4525a84a-fffd-2031-e063-62199f0af9db'
 # File Paths
 TXT_FILE_PATH = './raw_data'
 FAISS_INDEX_PATH = './faiss_index'
-JSON_TEST_PATH = './json_data/test.json'
+JSON_TEST_PATH = './private_test.json'
