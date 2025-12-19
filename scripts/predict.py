@@ -35,7 +35,7 @@ print(result)
 fieldnames = ["qid", "answer"]
 
 # Specify the filename
-filename = 'submission.csv'
+filename = '/code/submission.csv'
 
 # Open the file in write mode
 with open(filename, mode="w", newline="") as csvfile:
