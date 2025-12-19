@@ -1,13 +1,11 @@
-from config import (
-    TXT_FILE_PATH
-)
+from config import TXT_FILE_PATH
 import os
 from langchain_community.document_loaders import TextLoader
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 
-# --------------
+# ==============
 # I - LOAD FILES
-# --------------
+# ==============
 
 # Define the base directory path
 base_dir = TXT_FILE_PATH
