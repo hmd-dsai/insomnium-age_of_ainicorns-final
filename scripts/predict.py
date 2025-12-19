@@ -16,8 +16,8 @@ for item in test_data:
 
 print(f"Extracted {len(questions_for_llm_test)} questions from test_data.")
 
-START = 320
-STOP = 370
+START = 0
+STOP = 1
 test_set = questions_for_llm_test[START:STOP]
 
 result = []
@@ -39,7 +39,7 @@ print(result)
 fieldnames = ["qid", "answer"]
 
 # Specify the filename
-filename = f"./output/pred-{START + 1}_{STOP}" + '.csv'
+filename = 'submission.csv'
 
 # Open the file in write mode
 with open(filename, mode="w", newline="") as csvfile:
